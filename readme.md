@@ -4,7 +4,7 @@ Decimal form field for kirby.
 
 ## Installation
 
-`git submodule add https://github.com/iksi/KirbyDecimalField.git site/fields/decimal`  
+`git submodule add git@github.com:iksi/kirby-decimal-field.git site/fields/decimal`
 Or place a `decimal` folder in `/site/fields` with the repository’s contents.
 
 ## Usage
