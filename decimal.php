@@ -36,6 +36,10 @@ class DecimalField extends InputField {
 
         $filtered = filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
+        if (!is_int($filtered)) {
+            return $value;
+        }
+
         return number_format($filtered, $this->places, '.', '');
     }
 
